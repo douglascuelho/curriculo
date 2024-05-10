@@ -1,0 +1,7 @@
+Estrutura Básica
+
+<form action="/pagina2" method="POST"> 
+    elementos do formulário
+</form>
+
+action> destino dos dados

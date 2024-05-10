@@ -1,0 +1,20 @@
+
+    <body>
+            <table> 
+            <th></th> cabeçalho da tabela
+                <tr> linhas
+                    <td> colunas
+                        
+                    </td>
+                </tr>
+            </table>
+    </body>
+
+<!-- Semântica da Tabela -->
+<!-- thead, tbody, tfoot -->
+
+colspan -> faz uma linha ocupar varias colunas
+rowspan -> faz uma coluna ocupar varias linhas
+
+th > vem em negrito
+td > linhas comuns

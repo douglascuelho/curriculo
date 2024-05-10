@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Douglas Coelho">
+    <meta name="description" content="Formulário de matrícula para alunos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Matrícula de alunos </title>
+</head>
+<body>
+    <h3> FACULDADE INTERGALÁCTICA DO SISTEMA SOLAR </h3>
+    <table border="2" style="border-collapse: collapse;" >
+    <thead>
+    <tr> 
+        <th colspan="2"> FORMULÁRIO DE CADASTRO </th>
+    </tr>
+    </thead>
+    <br>
+    <tbody>
+    <form>  
+        <tr> 
+            <td>
+            <label for="nome"> Nome do Aluno </label>
+            <th> <input type="text" id="nome" name="nome" placeholder="Nome completo do aluno" required maxlength="50"> </th>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="date"> Data de Nascimento </label>
+                <th> <input type="date" id="date" name="date" required> </th>
+            </td>
+        </tr>
+    <br>
+    <tr>
+        <td>
+            Gênero <th> <select name="genero" required>
+            <option value="masc"> Masculino </option>
+            <option value="fem"> Feminino </option>
+            <option value="other"> Outro </option>
+            <option value="n/a"> Prefere não responder </option>
+            </select> </th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="address"> Endereço Completo </label>
+            <th> <input type="text" id="address" name="address" placeholder="Endereço completo do aluno" required maxlength="100"> </th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="email"> E-mail </label>
+            <th><input type="email" id="email" name="email" placeholder="email@dominio.com" required></th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="number"> Número de Telefone </label>
+            <th><input type="text" id="number" pattern="[0-9]{11}" required placeholder="** ***** ****"></th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="course"> Curso escolhido </label>
+            <th><input type="text" id="course" required></th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Período <th><select name="periodo" required>
+                <option value="manha"> Manhã </option>
+                <option value="tarde"> Tarde </option>
+                <option value="noite"> Noite</option>
+                </select> </th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="observations"> Observações (opcional) </label> <br>
+            <th><textarea name="observations" maxlength="300"></textarea></th>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button> Enviar </button>
+        </td>
+    </tr>
+    </tbody>
+    </form>  
+    </table>
+</body>
+</html>
